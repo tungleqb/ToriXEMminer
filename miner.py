@@ -25,7 +25,7 @@ print(f'Account: {account}, Worker ID: {worker_id}, GPU Mode: {gpu_mode}')
 
 # Load the configuration file
 config = configparser.ConfigParser()
-config_file_path = '/content/XENGPUMiner/config.conf'
+config_file_path = '/content/ToriXEMminer/config.conf'
 
 if os.path.exists(config_file_path):
     config.read(config_file_path)
