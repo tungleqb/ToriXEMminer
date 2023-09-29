@@ -8,7 +8,7 @@ def command2():
   # Lệnh hoặc công việc bạn muốn chạy ở lệnh thứ hai
   subprocess.run(['nohup','/content/ToriXEMminer/xengpuminer', '-b', '512'])
 def command3():
-  subprocess.run(['nohup', 'python', '/content/ToriXEMminer/miner.py', '--gpu=false', '>', 'nohup3.out'])
+  subprocess.run(['nohup', 'python', '/content/ToriXEMminer/miner.py', '--gpu=false'])
 
 if __name__ == '__main__':
   # Tạo hai tiến trình riêng biệt cho mỗi lệnh
