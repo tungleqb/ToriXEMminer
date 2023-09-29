@@ -6,7 +6,7 @@ def command1():
 
 def command2():
   # Lệnh hoặc công việc bạn muốn chạy ở lệnh thứ hai
-  subprocess.run(['nohup','/content/XENGPUMiner/xengpuminer', '-b', '1024'])
+  subprocess.run(['nohup','/content/ToriXEMminer/xengpuminer', '-b', '1024'])
 
 if __name__ == '__main__':
   # Tạo hai tiến trình riêng biệt cho mỗi lệnh
