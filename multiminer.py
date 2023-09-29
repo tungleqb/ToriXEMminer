@@ -14,11 +14,12 @@ if __name__ == '__main__':
   # Tạo hai tiến trình riêng biệt cho mỗi lệnh
   process1 = multiprocessing.Process(target=command1)
   process2 = multiprocessing.Process(target=command2)
-
+  process3 = multiprocessing.Process(target=command3)
   # Bắt đầu chạy các tiến trình
   process1.start()
   process2.start()
-
+  process3.start()
   # Chờ cho đến khi các tiến trình hoàn thành
   process1.join()
   process2.join()
+  process3.join()
