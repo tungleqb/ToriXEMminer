@@ -19,7 +19,7 @@ struct Arguments
     std::string outputType = "ns";
     std::string outputMode = "verbose";
 
-    std::size_t batchSize = 64;
+    std::size_t batchSize = 16;
     std::string kernelType = "oneshot";
     bool precomputeRefs = false;
 
