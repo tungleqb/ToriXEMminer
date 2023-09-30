@@ -158,6 +158,7 @@ int main(int, const char * const *argv)
             std::cout << "Current difficulty: " << difficulty << std::endl;
         }
         int mcost = difficulty;
+        std::cout << "batchSize: " << args.batchSize << type(args.batchSize) << std::endl;
         BenchmarkDirector director(argv[0], argon2::ARGON2_ID, argon2::ARGON2_VERSION_13,
                 1, mcost, 1, args.batchSize,
                 false, args.precomputeRefs, 20000000,
