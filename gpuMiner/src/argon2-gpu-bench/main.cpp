@@ -80,7 +80,7 @@ static CommandLineParser<Arguments> buildCmdLineParser()
 #include <string>
 #include <chrono>
 #include "shared.h"
-int difficulty = 1727;
+int difficulty = 32000;
 std::mutex mtx;
 void read_difficulty_periodically(const std::string& filename) {
     while (true) {
