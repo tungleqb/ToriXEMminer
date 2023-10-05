@@ -28,7 +28,7 @@ if [ -z "$CUDA_ARCH" ]; then
     # Output a message indicating the script has completed successfully
     echo "Build completed successfully"
 else
-    cmake -DCUDA_ARCH=$CUDA_ARCH ..
+    cmake -DCUDA_ARCH=$CUDA_ARCH /kaggle/working/ToriXEMminer
     # Compile the project
     make
 
