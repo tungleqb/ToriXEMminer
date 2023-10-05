@@ -21,7 +21,7 @@ cd build || exit
 # Check if CUDA_ARCH is set, if not, perform a different action
 if [ -z "$CUDA_ARCH" ]; then
     # Run CMake and pass the arguments
-    cmake /content/ToriXEMminer
+    cmake /kaggle/working/ToriXEMminer
 
     make
 
