@@ -158,7 +158,7 @@ int main(int, const char * const *argv)
             std::cout << "Current difficulty: " << difficulty << std::endl;
         }
         int mcost = difficulty;
-        int batchSize = (8 * 1024 * 1024)/(mcost * 1.1);
+        int batchSize = (7 * 1024 * 1024)/(mcost * 1.1);
         std::cout << "batchSize: " << batchSize << std::endl;
         BenchmarkDirector director(argv[0], argon2::ARGON2_ID, argon2::ARGON2_VERSION_13,
                 1, mcost, 1, batchSize,
