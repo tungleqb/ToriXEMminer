@@ -164,6 +164,7 @@ int main(int, const char * const *argv)
                 1, mcost, 1, batchSize,
                 false, args.precomputeRefs, 20000000,
                 args.outputMode, args.outputType);
+        std::cout << "batchSize: " << args.deviceIndex << args.listDevices << std::endl;
         CudaExecutive exec(args.deviceIndex, args.listDevices);
         exec.runBenchmark(director);
     }
