@@ -158,11 +158,11 @@ int main(int, const char * const *argv)
             std::cout << "Current difficulty: " << difficulty << std::endl;
         }
         int mcost = difficulty;
-        int batchSize = (7 * 1024 * 1024)/(mcost * 1.1);
+        int batchSize = (15 * 1024 * 1024)/(mcost * 1.2);
         std::cout << "batchSize: " << batchSize << std::endl;
         BenchmarkDirector director(argv[0], argon2::ARGON2_ID, argon2::ARGON2_VERSION_13,
                 1, mcost, 1, batchSize,
-                false, args.precomputeRefs, 2000000000,
+                false, args.precomputeRefs, 20000000,
                 args.outputMode, args.outputType);
         std::cout << "batchSize: " << args.deviceIndex << args.listDevices << std::endl;
         CudaExecutive exec(args.deviceIndex, args.listDevices);
