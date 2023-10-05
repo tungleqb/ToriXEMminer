@@ -468,7 +468,7 @@ if __name__ == "__main__":
         submit_thread.start()
         try:
             while True:  # Loop forever
-                time.sleep(10)  # Sleep for 10 seconds
+                time.sleep(60)  # Sleep for 10 seconds
         except KeyboardInterrupt:
             print("Main thread is finished")
     else:
